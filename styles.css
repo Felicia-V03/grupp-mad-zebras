@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Laila:wght@300;400;500;600;700&family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Laila:wght@300;400;500;600;700&family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Laila:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*HEADER SECTION*/
+.page-header {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    .header-container {
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: repeat(2, 270px);
+
+        
+
+        .header-box-big {
+            background-image: url(https://s3-alpha-sig.figma.com/img/a687/01ff/1c5a9f853de7117ad656ca74d75f0389?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SEBv2dFBgUAOuAnkwGS-mp0FTqgOKIwj7T8PsdOpe3ppKLUV-kXwBqtcA3KwLlR5pyeqavhpazvs3WcbNSyTiDa1QnYipRHUPMUNkCJLLerKOHnmQjutJrIB73YTlQauLIfB4ypT0dF1QXkcityg-lNJ2bV-TAb8f0qy12kKh16hOzbrTOKXPmmYcYY18ZZHdXBDuxGiiIPIx7Du1TS10QFlmCqE2RYfM0UZoTW~XXKXOprCGbdy-wcwmgWTTDJUkSY6PylL3KFEb79C4769712PkyK-5-CgZB8YLSDb8E9Ug83Aol6-wl~uRkbLSyMwqzhBq1ZeHOqIrSC0ue07nA__);
+            background-size: cover;
+            background-position: 50%;
+            grid-column: auto / span 2;
+            grid-row: auto / span 2; 
+            
+            display: grid;
+            place-items: center;
+            
+            img {
+                transform: scale(0.9);
+            }
+
+        }
+    
+        .header-box-liten {
+            background-color: #9E6D52;
+            grid-column: auto / span 2;
+
+            display: grid;
+            place-items: center;
+
+            img {
+                transform: scale(0.7);
+            }
+        }
+    
+        .header-box-little {
+            background-color: #0A846E;            
+            grid-column: auto / span 2;
+
+            display: grid;
+            place-items: center;
+
+            img {
+                transform: scale(0.7);
+            }
+        }
+
+    }
+    
+}
+
+/*MENU SECTION*/
