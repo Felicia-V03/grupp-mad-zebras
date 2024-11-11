@@ -20,6 +20,7 @@
 body{
     display: flex;
     justify-content: center;
+    background-color: #FCF6FC;
 }
 
 .wrapper {
@@ -87,11 +88,10 @@ body{
 }
 
 /*MENU SECTION*/
-nav {
+.menu {
     width: 100%;
-    padding: 1rem;
-
-    box-shadow: #000000;
+    height: 60px;
+    background-color: white;
 
     display: flex;
     justify-content: space-evenly;
@@ -101,5 +101,51 @@ nav {
         text-decoration: none;
         font-family: var(--text-font1);
         color: var(--color-green);
+        font-size: 20px;
+    }
+}
+
+.tip-box {
+    background-color: white;
+    padding: 3rem;
+
+    h1 {
+        color: var(--color-green);
+        font-family: var(--text-font1);
+        font-size: 48px;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    img {
+        background-color: var(--color-green);
+        transform: scale(1.5);
+        margin: 4rem;
+        padding: 2rem;
+        border-radius: 50%;
+    }
+
+    .tip-content {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .tip-text {
+        font-family: var(--text-font2);
+    }
+
+    button {
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        color: white;
+
+        width: 180px;
+        height: 60px;
+        padding: 1rem;
+        border-radius: 5px;
+
+        background-color: var(--color-green);
     }
 }
