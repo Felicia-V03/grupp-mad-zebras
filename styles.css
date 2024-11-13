@@ -36,17 +36,37 @@ body{
 
 /*HEADER SECTION*/
 .page-header {
-    display: flex;
-    flex-direction: row;
-
     width: 100%;
 
     .header-container {
         display: grid;
         grid-template-columns: repeat(4, 250px);
-        grid-template-rows: repeat(2, 270px);
+        grid-template-rows: repeat(2, 1fr);
 
-        
+        .header-box-big-s {
+            background-image: url('https://s3-alpha-sig.figma.com/img/ea38/7e30/cdbc098fba37b01c9b6818e119ecdc05?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BMn~-IT2mlhNn5LtAQYUNfgH9WYwFsL0TfN0CvqdiiDvOYKnJo~nD-lsjd8xJS0u1g62ppDWlm~5yQPtz73Tg4HMV3NV8LWa9nQzZijkES~Bdr71O9Rut0tIecC8~wbMe~jP3onOBeNJxoNV33l1l~l2TJRKVd5X5vv8jhp7t151H4kDZWlggApiRzTJ4I2YRSkqa9GQXSPptP1eLeyBbSDCRLH6IHCLgU1xlQYvVwbXl3qyRVpZcEoeKuypNahDWyi~ezNuv6tYYX1dlnCzHPHFWYfvn2D7bj1pOmaoV0XFjl7VV1sf9YqCGM-6tkYsNuUfAbT7qMztt1tlZgm1kA__');
+            background-size: cover;
+            background-position: 50%;
+            background-color: #00000033;
+            
+            padding: 2rem;
+            
+            display: grid;
+            grid-column: auto / span 4;
+            grid-row: auto / span 2; 
+            place-items: center;
+            
+            img {
+                transform: scale(0.8);
+            }
+
+            h1 {
+                font-family: var(--text-font1);
+                font-size: 2.5rem;
+                color: #fff;
+                margin: 2rem;
+            }
+        }        
 
         .header-box-big {
             background-image: url(https://s3-alpha-sig.figma.com/img/a687/01ff/1c5a9f853de7117ad656ca74d75f0389?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SEBv2dFBgUAOuAnkwGS-mp0FTqgOKIwj7T8PsdOpe3ppKLUV-kXwBqtcA3KwLlR5pyeqavhpazvs3WcbNSyTiDa1QnYipRHUPMUNkCJLLerKOHnmQjutJrIB73YTlQauLIfB4ypT0dF1QXkcityg-lNJ2bV-TAb8f0qy12kKh16hOzbrTOKXPmmYcYY18ZZHdXBDuxGiiIPIx7Du1TS10QFlmCqE2RYfM0UZoTW~XXKXOprCGbdy-wcwmgWTTDJUkSY6PylL3KFEb79C4769712PkyK-5-CgZB8YLSDb8E9Ug83Aol6-wl~uRkbLSyMwqzhBq1ZeHOqIrSC0ue07nA__);
@@ -61,7 +81,6 @@ body{
             img {
                 transform: scale(0.9);
             }
-
         }
     
         .header-box-liten {
@@ -87,9 +106,7 @@ body{
                 transform: scale(0.7);
             }
         }
-
     }
-    
 }
 
 /*MENU SECTION*/
