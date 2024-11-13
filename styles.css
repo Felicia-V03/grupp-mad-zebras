@@ -11,7 +11,6 @@
     --color-green: #0A846E;
     --color-brown: #9E6D52;
     --color-red: #B93857;
-
 }
 
 * {
@@ -211,10 +210,6 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 420px);
 
-    
-
-    
-    
     .gallery-tomat1 {
         background-image: url('https://s3-alpha-sig.figma.com/img/167d/d326/4eac0bc4565979c34826adc7384e3d1f?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ElTaDZVPPA09aNXYSmjkLpm07-pSCBTjxWO49~AFzBSCQWg5Kh8edzrCQ4YLq1vD9D33lyJ1E0Ly5fe-DbktDka6WwfYt9MgRlK6wCJBVsbZxQGugsvNWlZfUY8drMeFgkEswh6eDJ2J74JLmzHProg3svsfAteh4t~pY0rnM40m037Jw1d2T73zOvP5U0zaweD~wzuEiaqu~tWRK79cXmbs-zCIixcj~4ecpqw~MXJa4CfXn1wJXzmwwruNdsOnvqrEVd1esO3roUeAT8sUMLeIa7F1-YR4RZDMVYg8EcYGrz7GG7hdadY73d7M4TWWaURGD0pUvpjq47sTiOJftQ__');
         background-size: cover;
@@ -504,4 +499,22 @@ body{
             grid-template-rows: repeat(1,420px);
         }
     }    
+}
+
+.sm-footer {
+
+    .sm-footer-container {
+        background-color: var(--color-brown);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-img {
+        img {
+            size: 50px;
+        }
+    }
 }
