@@ -19,7 +19,7 @@
     padding: 0;
 }
 
-body{
+body {
     /* width: 100%;
     height: 100vh; */
     display: flex;
@@ -28,11 +28,14 @@ body{
 }
 
 .wrapper {
-    max-width: 1000px;
+    /* max-width: 1000px; */
+    width: 1000px;
+    min-width: 80%;
     margin: 0 auto;
     background-color: #fff;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
-
 
 /*HEADER SECTION*/
 .page-header {
@@ -41,10 +44,11 @@ body{
 
 .header-container {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr auto;
 }
 
+/*SEMA HEADER*/
 .header-box-big-s {
     background-image: url('https://s3-alpha-sig.figma.com/img/ea38/7e30/cdbc098fba37b01c9b6818e119ecdc05?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BMn~-IT2mlhNn5LtAQYUNfgH9WYwFsL0TfN0CvqdiiDvOYKnJo~nD-lsjd8xJS0u1g62ppDWlm~5yQPtz73Tg4HMV3NV8LWa9nQzZijkES~Bdr71O9Rut0tIecC8~wbMe~jP3onOBeNJxoNV33l1l~l2TJRKVd5X5vv8jhp7t151H4kDZWlggApiRzTJ4I2YRSkqa9GQXSPptP1eLeyBbSDCRLH6IHCLgU1xlQYvVwbXl3qyRVpZcEoeKuypNahDWyi~ezNuv6tYYX1dlnCzHPHFWYfvn2D7bj1pOmaoV0XFjl7VV1sf9YqCGM-6tkYsNuUfAbT7qMztt1tlZgm1kA__');
     background-size: cover;
@@ -58,6 +62,7 @@ body{
     grid-row: auto / span 2;
     place-items: center;
 }
+
 .header-box-big-s .img {
     transform: scale(0.8);
 }
@@ -95,10 +100,6 @@ body{
 
 }
 
-img {
-    transform: scale(0.7);
-}
-
 .header-box-little {
     background-color: var(--color-green);
     grid-column: auto / span 2;
@@ -108,8 +109,12 @@ img {
 
 }
 
-img {
+.header-box-liten img{
     transform: scale(0.7);
+}
+
+.header-box-little img{
+    transform: scale(0.7);   
 }
 
 /*MENU SECTION*/
@@ -120,25 +125,31 @@ img {
     till exempel paddings på list-elements.
     Responsivitet = rem/em/% istället för px */
     background-color: white;
+    /*display: flex;
+    justify-content: space-evenly;
+    align-items: center;*/
+    /* z-index: 1; */
+
+    display: inline;
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    /* z-index: 1; */
+    align-items: center;    
 
 }
 
-a {
+.menu a {
     text-decoration: none;
     font-family: var(--text-font1);
     color: var(--color-green);
     font-size: 20px;
+    padding: 1.25rem;
 }
 
-a:hover {
+.menu a:hover {
     background-color: var(--color-green);
     color: white;
     /* font-size: 1.5rem; */
-    padding: 1rem;
 }
 
 /*TIP SECTION*/
@@ -146,12 +157,14 @@ a:hover {
     padding: 2rem; 
 }
 
-.tip-text {
-    font-family: var(--text-font2);
-
+.tip-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
 }
 
-h1 {
+.tip-box h1 {
     color: var(--color-green);
     font-family: var(--text-font1);
     font-size: 3rem;
@@ -170,24 +183,20 @@ h1 {
     height: 15rem;
 }
 
-.tip-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5rem;
+.tip-text {
+    font-family: var(--text-font2);
 }
 
-h2 {
+.tip-content h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
 }
 
-p {
+.tip-content p {
     font-size: 1rem;
 }
 
-
-    /*LINE*/
+/*LINE*/
 .line-text {
     display: flex;
     flex-direction: column;
@@ -203,18 +212,19 @@ hr {
     border: none;
 }
 
-h2 {
+.line-text h2 {
     font-family: var(--text-font3);
     font-size: 2rem;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 /*GRÖNSAKER*/
 .grid-gallery {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 420px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: auto;
 }
 
 .gallery-img {
@@ -343,11 +353,7 @@ h3 {
 
 .gallery-card {
     box-shadow: 0 0 .5rem grey;
-
-}
-
-.gallery-img {
-    padding: 3rem;
+    aspect-ratio: 2 / 3;;
 }
 
 /*NORMAL BUTTON*/
@@ -406,6 +412,7 @@ h3 {
 
 
 .footer {
+    
     width: 100%;
 }
 
@@ -435,7 +442,9 @@ h3 {
 
 }
 
-h1 {
+.left-footer h4 {
+    color:#fff;
+
     font-size: 4rem;
     font-weight: 100;
 
@@ -445,28 +454,6 @@ h1 {
 
     grid-column: auto / span 2;
     grid-row: auto / span 3;
-}
-
-/*  SETT KLASSE PÅ p-taggs i FOOTER OG TA BORT KOMMENTAREN HER  */
-/* p {
-    display: flex;
-    align-items: flex-end;
-
-    font-size: 1.3rem;
-     padding: 1rem; 
-} */
-
-.email-footer {
-    justify-content: flex-end;
-}
-
-.right-footer {
-    background-color: #05564733;
-
-    grid-column: auto / span 2;
-    grid-row: auto / span 2;
-    display: grid;
-    place-items: center;
 }
 
 /*LAST FOOTER*/
@@ -475,10 +462,12 @@ h1 {
     font-weight: 400;
     font-size: 1.5rem;
     margin: 2rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-h1 {
+.footer h1 {
+    color: #fff;
     font-size: 4rem;
     font-weight: 100;
 
@@ -490,21 +479,18 @@ h1 {
     grid-row: auto / span 3;
 }
 
-
-
 /*  SETT KLASSE PÅ p-taggs i FOOTER OG TA BORT KOMMENTAREN HER  */
-/* p {
+.footer p {
     display: flex;
     align-items: flex-end;
 
     font-size: 1.3rem;
     padding: 1rem;
-} */
+} 
 
 .email-footer {
     justify-content: flex-end;
 }
-
 
 .right-footer {
     background-color: #05564733;
@@ -513,15 +499,6 @@ h1 {
     grid-row: auto / span 2;
     display: grid;
     place-items: center;
-}
-
-/*LAST FOOTER*/
-.last-footer {
-    font-family: var(--text-font2);
-    font-weight: 400;
-    font-size: 1.5rem;
-    margin: 2rem;
-    text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -582,9 +559,6 @@ h1 {
 
 }
 
-
-
-
 /*SEMATIC PAGE HEADER+MAIN+FOOTER*/
 /*SEMATIC MAIN CONTAINER*/
 .sema-main-container {
@@ -624,7 +598,7 @@ h1 {
     grid-template-rows: repeat(1,420px);
 }
 
-.sm-footer .footer-container {
+.sm-footer .sm-footer-container {
     background-color: var(--color-brown);
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -634,7 +608,7 @@ h1 {
 
 .sm-footer img {
     width: 50%;
-      height: 70%;
+    height: 70%;
 }
 
 .sm-footer .footer-foto {
