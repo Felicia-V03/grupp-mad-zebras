@@ -47,34 +47,6 @@ body {
     grid-template-rows: 1fr auto;
 }
 
-/*SEMA HEADER*/
-.header-box-big-s {
-    background-image: url('https://s3-alpha-sig.figma.com/img/ea38/7e30/cdbc098fba37b01c9b6818e119ecdc05?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BMn~-IT2mlhNn5LtAQYUNfgH9WYwFsL0TfN0CvqdiiDvOYKnJo~nD-lsjd8xJS0u1g62ppDWlm~5yQPtz73Tg4HMV3NV8LWa9nQzZijkES~Bdr71O9Rut0tIecC8~wbMe~jP3onOBeNJxoNV33l1l~l2TJRKVd5X5vv8jhp7t151H4kDZWlggApiRzTJ4I2YRSkqa9GQXSPptP1eLeyBbSDCRLH6IHCLgU1xlQYvVwbXl3qyRVpZcEoeKuypNahDWyi~ezNuv6tYYX1dlnCzHPHFWYfvn2D7bj1pOmaoV0XFjl7VV1sf9YqCGM-6tkYsNuUfAbT7qMztt1tlZgm1kA__');
-    background-size: cover;
-    background-position: 50%;
-    background-color: #00000033;
-
-    padding: 2rem;
-
-    display: grid;
-    grid-column: auto / span 4;
-    grid-row: auto / span 2;
-    place-items: center;
-}
-
-.header-box-big-s .img {
-    max-width: 100%;
-
-}
-
-.header-box-big-s h1 {
-    font-family: var(--text-font1);
-    font-size: 2.5rem;
-    color: #fff;
-    margin: 2rem;
-}
-
-
 .header-box-big {
     background-image: url(https://s3-alpha-sig.figma.com/img/a687/01ff/1c5a9f853de7117ad656ca74d75f0389?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SEBv2dFBgUAOuAnkwGS-mp0FTqgOKIwj7T8PsdOpe3ppKLUV-kXwBqtcA3KwLlR5pyeqavhpazvs3WcbNSyTiDa1QnYipRHUPMUNkCJLLerKOHnmQjutJrIB73YTlQauLIfB4ypT0dF1QXkcityg-lNJ2bV-TAb8f0qy12kKh16hOzbrTOKXPmmYcYY18ZZHdXBDuxGiiIPIx7Du1TS10QFlmCqE2RYfM0UZoTW~XXKXOprCGbdy-wcwmgWTTDJUkSY6PylL3KFEb79C4769712PkyK-5-CgZB8YLSDb8E9Ug83Aol6-wl~uRkbLSyMwqzhBq1ZeHOqIrSC0ue07nA__);
     background-size: cover;
@@ -405,6 +377,11 @@ h3 {
     grid-column: auto / span 3; */
 }
 
+/* Trash icon for mobile version hidden when the screen is in desktop mode */
+.grid-trash {
+    display: none;
+}
+
 .button-3 {
     color: white;
     padding: 1rem 3rem 1rem 3rem;
@@ -571,21 +548,27 @@ h3 {
         font-weight: 500;
     }
 
-    .button-1 {
-        margin: 2.5rem 0rem 0rem 0rem;
+    .line-text h2 {
+        font-size: 1rem;
     }
 
     .grid-gallery {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
         font-size: 2rem;
+        gap: .5rem;
 
+    }
+
+    .gallery-img {
+        
+        padding: 1rem;
     }
 
     .gallery-card {
         box-shadow: 0 0 .5rem grey;
         max-width: 290px;
-        width: 80%;
+        width: 100%;
     }
 
     .gallery-text h3 {
@@ -604,14 +587,32 @@ h3 {
         display: none;
     }
 
+    .grid-trash {
+        display: block;
+        width: .8rem;
+        height: 1rem;
+        
+    }
+
+
+    .button-2 {
+        font-size: 1rem;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+    }
+
     .tip-text h2 {
         font-size: 1rem;
     }
 
-    .tip-text {
+    .tip-text p {
         font-size: .9rem;
     }
 
+    .button-1, .button-3 {
+        margin: 2.5rem 0rem 0rem 0rem;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        font-size: 1rem;
+    }
     
 
     .footer-container {
@@ -646,18 +647,51 @@ h3 {
     }
 
     .left-footer h4 {
-
+        font-size: 2rem;
         align-items: center;
         transform: translateY(-45px);
     }
 
     .email-footer, .phone-footer {
+        font-size: .8rem;
         transform: translateY(40px);
+    }
+
+    .last-footer p {
+        font-size: .8rem;
     }
 
 }
 
 /*SEMATIC PAGE HEADER+MAIN+FOOTER*/
+
+/*SEMA HEADER*/
+.header-box-big-s {
+    background-image: url('https://s3-alpha-sig.figma.com/img/ea38/7e30/cdbc098fba37b01c9b6818e119ecdc05?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BMn~-IT2mlhNn5LtAQYUNfgH9WYwFsL0TfN0CvqdiiDvOYKnJo~nD-lsjd8xJS0u1g62ppDWlm~5yQPtz73Tg4HMV3NV8LWa9nQzZijkES~Bdr71O9Rut0tIecC8~wbMe~jP3onOBeNJxoNV33l1l~l2TJRKVd5X5vv8jhp7t151H4kDZWlggApiRzTJ4I2YRSkqa9GQXSPptP1eLeyBbSDCRLH6IHCLgU1xlQYvVwbXl3qyRVpZcEoeKuypNahDWyi~ezNuv6tYYX1dlnCzHPHFWYfvn2D7bj1pOmaoV0XFjl7VV1sf9YqCGM-6tkYsNuUfAbT7qMztt1tlZgm1kA__');
+    background-size: cover;
+    background-position: 50%;
+    background-color: #00000033;
+
+    padding: 2rem;
+
+    display: grid;
+    grid-column: auto / span 4;
+    grid-row: auto / span 2;
+    place-items: center;
+}
+
+.header-box-big-s .img {
+    max-width: 100%;
+
+}
+
+.header-box-big-s h1 {
+    font-family: var(--text-font1);
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 2rem;
+}
+
 /*SEMATIC MAIN CONTAINER*/
 .sema-main-container {
     padding: 2rem;
@@ -736,6 +770,8 @@ h3 {
     background-image: url('https://s3-alpha-sig.figma.com/img/05eb/62d1/103ffdf6673c1ce32da7b311e04da5d7?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KRtqbuwYes2OOGnbgRlaLUxepHpRGYgKtlh2ire6NTp-9KLEUbyPE4x7FSVLl0RgAUYhETPAoa7WoMaISW7kkufnOFYbzbZuCp9Ze-mgFvwJxGxD1UnqKlt-tgqAY-HYgDDyq64FzhNaCMr2sjtZxXCokYQCD10YcfRzJIQ-fH~QYe8WMiOM4vZ4glnOT6eqMC7Gj2bTcStOtf2SdFwoKZPY9jDez5cWfwVNzVbICwAn-1WjYzvNAv~NW8NcfXcgzWPX5dYMqfcKLaC-0FTrka62WyMsl-JWmzzmA5zcaFrwi2S0aid-lNbIRh17-teG97OFX42hfkgrYWTa2tT1wg__');
 }
 
+
+/*MEDIA FOR SEMATIC PAGE*/
 @media (max-width: 600px) {
     
 
