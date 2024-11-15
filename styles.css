@@ -19,8 +19,7 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
+    width: 100vw;
     background-color: #FCF6FC;
 }
 
@@ -100,7 +99,7 @@ body {
 /*NAV SECTION FOR MENU*/
 .menu {
     width: 100%;
-    height: 3.75rem;
+    height: auto;
     background-color: white;
     display: inline;
     text-align: center;
@@ -174,7 +173,7 @@ body {
 }
 
 /*-----LINE SECTION WITH A TEXT-----*/
-/*sECTION FOR LINE AND TEXT*/
+/*SECTION FOR LINE AND TEXT*/
 .line-text {
     display: flex;
     flex-direction: column;
@@ -199,13 +198,11 @@ hr {
 }
 
 /*VEGETABLES GALLERY*/
-
 .grid-gallery {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     grid-auto-rows: auto;
-
 }
 
 .gallery-img {
@@ -216,7 +213,6 @@ hr {
     background-image: url('https://s3-alpha-sig.figma.com/img/5d4a/3326/3a625f934c426be649ef53624f44c6e7?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oByy-9ZwDhH8We~EyFmBDgF9EI7s97sLnpOebb02N1Abh93jJJ1WKaLRlqbTayTU2Bkw06~V5nESk-sQ0Ru-A8o3enOc4W7QK2dWgm6tVaMu2ccMQGnWQdn8vaPxTznAxq3qPbtgC6KyeMVz5L8sqXONWsmsyDEQSa1pN~Vfqj1Zc~tOGFK7KXHJaHCcm11-1BRgD-YMc0li3eqe6CYVMlX5Mw4OGKBGywbGRNehD0NSEyRbyGOqhCs~5RNEbDM~84yfBMRpycDYfuPX8sBGXE464V3nzDw0H9F109xeOWzEYbSJkcpPjHVCGpPl70BgxYXunm91YkdI7nKdPHZdsQ__');
     background-size: cover;
     background-position: center;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,7 +222,6 @@ hr {
     background-image: url('https://s3-alpha-sig.figma.com/img/167d/d326/4eac0bc4565979c34826adc7384e3d1f?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ElTaDZVPPA09aNXYSmjkLpm07-pSCBTjxWO49~AFzBSCQWg5Kh8edzrCQ4YLq1vD9D33lyJ1E0Ly5fe-DbktDka6WwfYt9MgRlK6wCJBVsbZxQGugsvNWlZfUY8drMeFgkEswh6eDJ2J74JLmzHProg3svsfAteh4t~pY0rnM40m037Jw1d2T73zOvP5U0zaweD~wzuEiaqu~tWRK79cXmbs-zCIixcj~4ecpqw~MXJa4CfXn1wJXzmwwruNdsOnvqrEVd1esO3roUeAT8sUMLeIa7F1-YR4RZDMVYg8EcYGrz7GG7hdadY73d7M4TWWaURGD0pUvpjq47sTiOJftQ__');
     background-size: cover;
     background-position: center;
- 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,7 +231,6 @@ hr {
     background-image: url('https://s3-alpha-sig.figma.com/img/cac0/76f9/7fe136ecaefa8582b119ea9ffd3acf8f?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J8Bx34MyBtamYNcSFRyf4ysUEZ5VYRiUlUfGKU2MBvmUNO88en-LyDSjkGaAaWWC1kpAkFfmwimTXIdGuE5v5Fhp2WYl4w5I0RYIWRztZQCoadOqdN1pX81ccwhP11N9MVBEDdlcbYQO52marc8bi7-whRa0g1hu8B9Bp7GrGXM7pivJ7hYEFMzrbvvyec3yIGDZLOeb~gMOljHuFJKQnrbeFpBlAfxMcFBQqzQPIjM~gROzBqI1pQ-Ev1caljLp2UXsExQBxlaR5JE6AITg0sAHUrLNwLlh6HWe1IlwjekYOC8sabu3gO5iLgOuZUKXK0IdBFdWCvNELYBvd51aoQ__');
     background-size: cover;
     background-position: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,7 +240,6 @@ hr {
     background-image: url('https://s3-alpha-sig.figma.com/img/504a/53c4/3ec67f7d97de7e84a61cfdf270bff12e?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VY2Zd80ix1l-D6HKU5OYzT9szcVvGdHZDMJ9-ljJW~0W8gQX~8TGWqN~5uLSKoqg2Z~5iUg40jO1n45vXVIF~THIRbOI-gBeJdejtkikzQvsW6Fn89GkY~kHA6i~rzWr~pnAuMNYwUsrhfNSfJmMoFYwcZCcTLH69QIiWMnIYuxWFCFBy~9R8OJs7yiiVzUw4p1~269Swsy14Q2tq3SL1FjYn~RoZdstlDv8UV3duCzEDmnJdyk2UYwe0QMl8ut5I0ltUlrkA7fWeEpMEtv7uA6S~38pmK1MC1re2MH3j4DGP7MB4rDKeQFf~ypAR731bjWnOjEWroAC6I7mYyfm0A__');
     background-size: cover;
     background-position: center;
- 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,7 +249,6 @@ hr {
     background-image: url('https://s3-alpha-sig.figma.com/img/c83d/7219/686d3f610c50f72037f5c969cd271db0?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NAkxVZayB7nViDH5O4AI13Zy9d7IQckxfU68~NzlkDgktvZGlSTxmmAXOlXNSwd9XQUmI-BBw8s69mQ2md-zh330-ond9Nywn3ooECWAviNV6KZaTzLUhXpxDJTHcDV3g8nRcwvndgxY~ZnkvVm3KqP9u2ciKluBtPRKejpwvyQj6Zh2mldJcHIdRJH9yxyfoAV2OUad3RpA0OmuZzFGCpm8gBsRLstpxfJncfXd9LEaYqPIi7Cd-W6gSD5kvJVfnXtQZbRa2sojUTAYxtqWfOqFrrKu-Nrb8b7dt~I2Iixfbl6NmbzghbfPDTY~wsixdFmWxhM-X2Eh87dxdYLhhg__');
     background-size: cover;
     background-position: center;
- 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,7 +258,6 @@ hr {
     background-image: url('https://s3-alpha-sig.figma.com/img/4626/76fd/370f6ff6faafd60d5422e17b260735b2?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YzavRDkVVkRSj6zg41ck2Cr3EeaTW-wZ0HmdxUEGYEBw1W9cLbI9XPkREKUErkiqZ12rhxOr17vAtq94tuiHkX5r2K2MnIGhUT0EZ9Nhe5Yy~fak2k3hOaRMwDzWmqTd2nK54bFoVa4-OMU1jne3PGfYiCUEcOom6vq-54bwaKCyh-KQz0Xtr9eoJuOli6Uvg0dLYggiEEwYOGfqDCpRYED89dh6HvAdMA1x5kX639E2QleCENNjapABtmHl3pNbbpyCzu~5PrBGkDn5ohKz4PPE-J9AVUZfs6UCWyxhr7pvJKmANi--BZDkPvowxwf4HlruINCXFXy05pNJY3gYaQ__');
     background-size: cover;
     background-position: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,7 +277,6 @@ h3 {
     font-weight: 600;
     font-family: var(--text-font3);
     display: flex;
-    
 }
 
 .mobil-gr {
@@ -308,13 +298,12 @@ h3 {
     display: flex; 
     justify-self: start;
     padding-left: 0;
-    
 }
 
 .datum {
     font-weight: 700;
     font-family: var(--text-font2);
-    font-size: 1rem; /* lagt til str nå */
+    font-size: 1rem; 
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -324,22 +313,18 @@ h3 {
 .grid-button {
     background-color: var(--color-red);
     font-family: var(--text-font2);
-    font-size: 1rem; /*lagt til str nå*/
+    font-size: 1rem; 
     font-weight: 700;
     color: #fff;
-    height: 2rem; /* lagt til nå */
+    height: 2rem; 
     width: 6rem;
     border-radius: .5rem;
     border-style: none;
-    justify-self: end; /*la til nå*/
+    justify-self: end; 
 }
-
-
 
 .gallery-card {
     box-shadow: 0 0 .5rem grey;
-    /* max-width: 290px;
-    width: 80%; */
 }
 
 /*NORMAL BUTTON*/
@@ -370,14 +355,11 @@ h3 {
     color: #fff;
     font-weight: 500;
     font-size: 1.5rem;
-
     padding: 1rem 3rem;
     margin-top: 3rem;
     margin-bottom: 4rem;
-
     border-radius: .5rem;
     border-style: none;
-
     box-shadow: 0 5px 5px rgba(81, 81, 81, 0.2);
 }
 
@@ -417,11 +399,11 @@ h3 {
 .grid-button:hover { 
         background-color:#9b2e47;
         cursor: pointer;
-    }
-
+}
 
 .footer {
     width: 100%;
+    padding-top: 4rem;
 }
 
 .footer-container {
@@ -438,30 +420,22 @@ h3 {
 .left-footer {
     font-family: var(--text-font1);
     color: #fff;
-
     grid-column: auto / span 2;
     grid-row: auto / span 2;
-
     background-color: rgba(0, 0, 0, 0.79);
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    
     aspect-ratio: 1 / 1;
-
 }
 
 .left-footer h4 {
     color:#fff;
-
     font-size: 4rem;
     font-weight: 100;
-
     margin-top: 8rem;
     display: grid;
     place-self: center;
-
     grid-column: auto / span 2;
     grid-row: auto / span 3;
 }
@@ -489,20 +463,16 @@ h3 {
     color: #fff;
     font-size: 4rem;
     font-weight: 100;
-
     margin-top: 8rem;
     display: grid;
     place-self: center;
-
     grid-column: auto / span 2;
     grid-row: auto / span 3;
 }
 
-/*  SETT KLASSE PÅ p-taggs i FOOTER OG TA BORT KOMMENTAREN HER  */
 .footer p {
     display: flex;
     align-items: flex-end;
-
     font-size: 1.3rem;
     padding: 1rem;
 } 
@@ -513,12 +483,10 @@ h3 {
 
 .right-footer {
     background-color: #05564733;
-
     grid-column: auto / span 2;
     grid-row: auto / span 2;
     display: grid;
     place-items: center;
-
     aspect-ratio: 1 / 1;
 }
 
