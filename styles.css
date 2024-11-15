@@ -109,7 +109,10 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;    
+    align-items: center;   
+    
+    box-shadow: 0 3px 5px rgba(81, 81, 81, 0.2);
+
 
 }
 
@@ -352,9 +355,10 @@ h3 {
     font-size: 1.5rem;
     white-space: nowrap;
     background-color: var(--color-green);
+    box-shadow: 0 5px 5px rgba(81, 81, 81, 0.2);
 }
 
-.btn-2 {
+.flex-button-container-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -374,6 +378,9 @@ h3 {
 
     border-radius: .5rem;
     border-style: none;
+
+    box-shadow: 0 5px 5px rgba(81, 81, 81, 0.2);
+
     
     
     
@@ -397,12 +404,34 @@ h3 {
     font-weight: 500;
     font-size: 1.5rem;
     white-space: nowrap;
+    box-shadow: 0 5px 5px rgba(81, 81, 81, 0.2);
 
     /*  Responsivitet = rem/em/% istället för px,
     eventuelt padding som gjør button større */
 
     background-color: var(--color-green);
 }
+
+.button-1:hover {
+    background-color: #0a6b59;
+    cursor: pointer;
+}
+
+.button-2:hover {
+    background-color: #0a6b59;
+    cursor: pointer;
+}
+
+.button-3:hover {
+    background-color: #0a6b59;
+    cursor: pointer;
+}
+
+.grid-button:hover { 
+        background-color:#9b2e47;
+        cursor: pointer;
+    }
+
 
 .footer {
     width: 100%;
@@ -458,6 +487,7 @@ h3 {
     /* margin: 2rem; */
     display: flex;
     justify-content: center;
+    box-shadow: 0 3px 5px rgba(81, 81, 81, 0.2);
 }
 
 .footer h1 {
@@ -530,7 +560,7 @@ h3 {
         width: 100%;
         display: grid;
         place-items: center;
-        aspect-ratio: 1;
+        /* aspect-ratio: 1;   */
 
         /* overflow: hidden; */
         
@@ -613,37 +643,12 @@ h3 {
         font-size: 1rem;
     }
 
-   
-
-    .tip-content {
-        flex-direction: column-reverse;
-        text-align: center; 
-    }
-
-    .tip-box {
-        margin-top: 12rem;
-        margin-bottom: 3rem;;
-    }
-
-    .tip-box h1 {
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
-
-    .line-text h2 {
-        font-size: 1rem;
-    }
-
     .grid-gallery {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
         font-size: 2rem;
         gap: 1rem;
         justify-self: center; 
-    }
-
-    h3 {
-        display: none;
     }
 
     .mobil-gr {
@@ -771,7 +776,7 @@ h3 {
     .last-footer p {
         font-size: .8rem;
     }
-
+}
 
 
 /*SEMATIC PAGE HEADER+MAIN+FOOTER*/
@@ -834,7 +839,7 @@ h3 {
 }
 
 .add-info .add-form {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -868,11 +873,11 @@ h3 {
     color: white;
     box-shadow: 0 4px 4px 0 #00000040;
 
-    width: 24%;
-    /*margin-left: 38%;
-    margin-right: 38%;*/
+    /*    width: 24%;*/
+    margin-left: 38%;
+    margin-right: 38%;
     margin-top: 2rem;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 3rem;
     border-radius: .5rem;
     border-style: none;
     font-weight: 600;
@@ -884,29 +889,28 @@ h3 {
     eventuelt padding som gjør button større */    
 }
 
-/* .name, .date {
-    padding: 1rem;
-} */
+.button-sm:hover {
+    background-color: #0a6b59;
+    cursor: pointer;
+}
 
 /*SEMATIC GALLERY*/
 .all-plant h2 {
     margin-top: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     text-align: center;
     font-family: var(--text-font3);
     font-size: 2rem;
     font-weight: 600;
 }
 
-.all-plant .grid-gallery-sm {
-    margin-top: 7rem;
-    margin-bottom: 8rem;
-
+.all-plant .grid-gallery-sm {   
+    margin-bottom: 4rem;
 
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 420px);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 /*SEMATIC FOOTER*/
@@ -924,7 +928,6 @@ h3 {
 }
 
 .sm-footer-img-1, .sm-footer-img-2, .sm-footer-img-3, .sm-footer-img-4 {
-    background-repeat: none;
     background-position: 50%;
     background-size: cover;
 }
@@ -948,6 +951,10 @@ h3 {
 .sm-footer-img-1 figure, .sm-footer-img-2 figure, .sm-footer-img-3 figure, .sm-footer-img-4 figure {
     aspect-ratio: 4 / 5;
     background-color: #9E6D5240;
+}
+
+.sm-footer .last-footer {
+    margin: 1rem;
 }
 
 @media (max-width: 600px) {
@@ -994,7 +1001,7 @@ h3 {
 
        display: flex;
        flex-direction: column;
-
+       align-items: center; 
     }
 
     .add-info p {
@@ -1005,14 +1012,37 @@ h3 {
 
     .add-info label {
         font-size: .75rem;
+        align-self: flex-start;
     }
 
-    .add-info.button-sm {
-        margin-left: 10%;
-        margin-right: 10%;
-
+    .add-info .button-sm {
+        margin: 0;
+        margin-top: 2rem;
         font-size: 1rem;
-        padding: .5rem;
+        font-weight: 700;
+        padding: .5rem 1.5rem;
+        text-align: center;
+    }
+
+    .all-plant h2 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-family: var(--text-font3);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .all-plant .grid-gallery-sm {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+        justify-self: center; 
+
+    }
+
+    .all-plant .grid-gallery-sm .gallery-gurka img{
+        display: none;
     }
 
     .sm-footer .sm-footer-container {
