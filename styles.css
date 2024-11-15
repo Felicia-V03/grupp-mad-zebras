@@ -63,7 +63,8 @@ body {
 }
 
 .header-box-big-s .img {
-    transform: scale(0.8);
+    max-width: 100%;
+
 }
 
 .header-box-big-s h1 {
@@ -230,11 +231,21 @@ hr {
     padding: 4rem;
 }
 
+.gallery-gurka {
+    background-image: url('https://s3-alpha-sig.figma.com/img/5d4a/3326/3a625f934c426be649ef53624f44c6e7?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oByy-9ZwDhH8We~EyFmBDgF9EI7s97sLnpOebb02N1Abh93jJJ1WKaLRlqbTayTU2Bkw06~V5nESk-sQ0Ru-A8o3enOc4W7QK2dWgm6tVaMu2ccMQGnWQdn8vaPxTznAxq3qPbtgC6KyeMVz5L8sqXONWsmsyDEQSa1pN~Vfqj1Zc~tOGFK7KXHJaHCcm11-1BRgD-YMc0li3eqe6CYVMlX5Mw4OGKBGywbGRNehD0NSEyRbyGOqhCs~5RNEbDM~84yfBMRpycDYfuPX8sBGXE464V3nzDw0H9F109xeOWzEYbSJkcpPjHVCGpPl70BgxYXunm91YkdI7nKdPHZdsQ__');
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .gallery-tomat1 {
     background-image: url('https://s3-alpha-sig.figma.com/img/167d/d326/4eac0bc4565979c34826adc7384e3d1f?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ElTaDZVPPA09aNXYSmjkLpm07-pSCBTjxWO49~AFzBSCQWg5Kh8edzrCQ4YLq1vD9D33lyJ1E0Ly5fe-DbktDka6WwfYt9MgRlK6wCJBVsbZxQGugsvNWlZfUY8drMeFgkEswh6eDJ2J74JLmzHProg3svsfAteh4t~pY0rnM40m037Jw1d2T73zOvP5U0zaweD~wzuEiaqu~tWRK79cXmbs-zCIixcj~4ecpqw~MXJa4CfXn1wJXzmwwruNdsOnvqrEVd1esO3roUeAT8sUMLeIa7F1-YR4RZDMVYg8EcYGrz7GG7hdadY73d7M4TWWaURGD0pUvpjq47sTiOJftQ__');
     background-size: cover;
     background-position: center;
-
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,7 +265,7 @@ hr {
     background-image: url('https://s3-alpha-sig.figma.com/img/504a/53c4/3ec67f7d97de7e84a61cfdf270bff12e?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VY2Zd80ix1l-D6HKU5OYzT9szcVvGdHZDMJ9-ljJW~0W8gQX~8TGWqN~5uLSKoqg2Z~5iUg40jO1n45vXVIF~THIRbOI-gBeJdejtkikzQvsW6Fn89GkY~kHA6i~rzWr~pnAuMNYwUsrhfNSfJmMoFYwcZCcTLH69QIiWMnIYuxWFCFBy~9R8OJs7yiiVzUw4p1~269Swsy14Q2tq3SL1FjYn~RoZdstlDv8UV3duCzEDmnJdyk2UYwe0QMl8ut5I0ltUlrkA7fWeEpMEtv7uA6S~38pmK1MC1re2MH3j4DGP7MB4rDKeQFf~ypAR731bjWnOjEWroAC6I7mYyfm0A__');
     background-size: cover;
     background-position: center;
-
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,7 +275,7 @@ hr {
     background-image: url('https://s3-alpha-sig.figma.com/img/c83d/7219/686d3f610c50f72037f5c969cd271db0?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NAkxVZayB7nViDH5O4AI13Zy9d7IQckxfU68~NzlkDgktvZGlSTxmmAXOlXNSwd9XQUmI-BBw8s69mQ2md-zh330-ond9Nywn3ooECWAviNV6KZaTzLUhXpxDJTHcDV3g8nRcwvndgxY~ZnkvVm3KqP9u2ciKluBtPRKejpwvyQj6Zh2mldJcHIdRJH9yxyfoAV2OUad3RpA0OmuZzFGCpm8gBsRLstpxfJncfXd9LEaYqPIi7Cd-W6gSD5kvJVfnXtQZbRa2sojUTAYxtqWfOqFrrKu-Nrb8b7dt~I2Iixfbl6NmbzghbfPDTY~wsixdFmWxhM-X2Eh87dxdYLhhg__');
     background-size: cover;
     background-position: center;
-
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -302,7 +313,6 @@ h3 {
     font-size: 1.5rem;
     font-weight: 600;
     font-family: var(--text-font3);
-
     display: flex;
     /* align-items: flex-end; */
 }
@@ -340,19 +350,12 @@ h3 {
     justify-self: end; /*la til nå*/
 }
 
-.gallery-gurka {
-    background-image: url('https://s3-alpha-sig.figma.com/img/5d4a/3326/3a625f934c426be649ef53624f44c6e7?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oByy-9ZwDhH8We~EyFmBDgF9EI7s97sLnpOebb02N1Abh93jJJ1WKaLRlqbTayTU2Bkw06~V5nESk-sQ0Ru-A8o3enOc4W7QK2dWgm6tVaMu2ccMQGnWQdn8vaPxTznAxq3qPbtgC6KyeMVz5L8sqXONWsmsyDEQSa1pN~Vfqj1Zc~tOGFK7KXHJaHCcm11-1BRgD-YMc0li3eqe6CYVMlX5Mw4OGKBGywbGRNehD0NSEyRbyGOqhCs~5RNEbDM~84yfBMRpycDYfuPX8sBGXE464V3nzDw0H9F109xeOWzEYbSJkcpPjHVCGpPl70BgxYXunm91YkdI7nKdPHZdsQ__');
-    background-size: cover;
-    background-position: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .gallery-card {
     box-shadow: 0 0 .5rem grey;
-    aspect-ratio: 2 / 3;
+    /* max-width: 290px;
+    width: 80%; */
 }
 
 /*NORMAL BUTTON*/
@@ -419,7 +422,6 @@ h3 {
 }
 
 .footer {
-    
     width: 100%;
 }
 
@@ -560,8 +562,8 @@ h3 {
     }
 
     .tip-content {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column-reverse;
+        text-align: center; 
     }
 
     .tip-box h1 {
@@ -577,7 +579,40 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
         font-size: 2rem;
+
     }
+
+    .gallery-card {
+        box-shadow: 0 0 .5rem grey;
+        max-width: 290px;
+        width: 80%;
+    }
+
+    .gallery-text h3 {
+        font-size: 1rem;
+    }
+
+    .datum, .namn  {
+        font-size: .7rem;
+    }
+
+    .gallery-text {
+        max-width: 290px;
+    }
+
+    .grid-button {
+        display: none;
+    }
+
+    .tip-text h2 {
+        font-size: 1rem;
+    }
+
+    .tip-text {
+        font-size: .9rem;
+    }
+
+    
 
     .footer-container {
         grid-template-columns: repeat(1, 1fr);
@@ -655,25 +690,53 @@ h3 {
 }
 
 .all-plant .grid-gallery-sm {
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+
+
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1,420px);
+    grid-template-rows: repeat(1, 420px);
 }
 
 .sm-footer .sm-footer-container {
     background-color: var(--color-brown);
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: auto;
-    gap: .5rem;
+    gap: 1rem;
+    padding: 2rem;
 }
 
-.sm-footer img {
-    width: 50%;
-    height: 70%;
+.sm-footer .sm-footer-container article {
+    aspect-ratio: 4 / 5;
+
 }
 
-.sm-footer .footer-foto {
-    aspect-ratio: 2 / 3;
+.sm-footer-img-1, .sm-footer-img-2, .sm-footer-img-3, .sm-footer-img-4 {
+    background-repeat: none;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.sm-footer-img-1 {
+    background-image: url('https://s3-alpha-sig.figma.com/img/5cf3/a05d/8aae1b85a0b3a5a8caa12c31e4b5e417?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QELC43UpFH~rLDPOU5CISQ--R~BrYrDDJLxT5nT8hpdvrFwqFPEA9WakdoIakWGaPPKHBE25QkxLgAMlqUU5HHuw4hs555X2CG3RUjqIYeMKsWUfiiovyPTkEujML~a3eGJ~9YtwsIi8waueKzwmLChmR2PX~ba5dy8Na9iSG~jbsQ05JlVD~6EpqPmxsNLYkYXFCfgW-YuHLxwYH4d38IJf6Va~0n4k3aoziAyoTjPLvJ2OudYk~eBR1ebcxYI5D6vfLMCB~9PFNV-R0doDfkkxAINdbrxm58eoibcnmLgK1X0U8Lici4MhefMZ3cCB-G~2EL7md7oJaXcsWSOAUw__');
+}
+
+.sm-footer-img-2 {
+    background-image: url('https://s3-alpha-sig.figma.com/img/9c89/6dec/e9304f9d1a254dcbd5190f2a7a82dddb?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I~-zixOYP-RlZa9xqIYH8Apu0iyHZ4Hp3KFKh00oVqkpd9qCzBusaQ3~dVPkGv05bD6H-MR7KzIxIc7O5cdKtXVPkmgv5JTGvsHGkR0vA2zFBgYw-Gtd9iy5tFG5pZ~GLaTfkqkWIz96aN3TUaz0NptAMazXO5iUCrTie7TgzxQRmU3Ajjat8sGKG1ZYRDNV5Wiid3Pc3WbdCDzPoMzLNGt~OlwJixsUGi1mIKdZ-WERNy4ARktTTlknwYajmgQY8d3Q0U9oEDRiP-DpmywqUxtbNFnULLdCNcG9w5qf-wMtomWGk8onHvQXSp8jClIuyTud~Odfp7gTid5OFRPTqw__');
+}
+
+.sm-footer-img-3 {
+    background-image: url('https://s3-alpha-sig.figma.com/img/1c30/4c45/4c8bb563f38c73a410401e869d7491e4?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CJCPpw1U0lAdnIsPq7bX6fsDRXU35-mMs8kB08SzQi-JJqzm4OsqpH8u~u3Gh~4XbJUEiYsv7cW~SAi41n1a9zcxD85cxrghxzrGAS2y1ypWJSihYaWSsk0ZTQBPDmnYru1RVb9ZC3CcneWLOYRua0vOVOxwpf50ZV-PGXBhP-BsyHN-H~VsxmTxmbr0KONsEOJ7ol3H-Pqgrmf70CW0EJoxBqVPVo0fB8QC257p~D8xkU-W6qCXKXoQn0HiG4eEfOTOniNQSvapmCd8hBmvHJJ46PwXAoyoS3tzSes5n~~pNNjfHn4OWdN5Rc7NX9XVP83wHB0TK0Bsbn9XHqWDTA__');
+}
+
+.sm-footer-img-4 {
+    background-image: url('https://s3-alpha-sig.figma.com/img/05eb/62d1/103ffdf6673c1ce32da7b311e04da5d7?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KRtqbuwYes2OOGnbgRlaLUxepHpRGYgKtlh2ire6NTp-9KLEUbyPE4x7FSVLl0RgAUYhETPAoa7WoMaISW7kkufnOFYbzbZuCp9Ze-mgFvwJxGxD1UnqKlt-tgqAY-HYgDDyq64FzhNaCMr2sjtZxXCokYQCD10YcfRzJIQ-fH~QYe8WMiOM4vZ4glnOT6eqMC7Gj2bTcStOtf2SdFwoKZPY9jDez5cWfwVNzVbICwAn-1WjYzvNAv~NW8NcfXcgzWPX5dYMqfcKLaC-0FTrka62WyMsl-JWmzzmA5zcaFrwi2S0aid-lNbIRh17-teG97OFX42hfkgrYWTa2tT1wg__');
+}
+
+@media (max-width: 600px) {
+    
+
 }
