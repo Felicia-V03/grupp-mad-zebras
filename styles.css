@@ -61,6 +61,10 @@ body {
     background-position: 50%; 
 }
 
+.ham-icon {
+    display: none;
+}
+
 /*IMAGE ICON FOR BIG HEADER BOX*/
 .header-box-big img {
     transform: scale(0.9);
@@ -520,6 +524,16 @@ h3 {
 /*-----MEDIA PAGE-----*/
 @media (max-width: 600px) {
 
+    .ham-icon {
+        display: block;
+        width: 2.5rem;
+        height: 1.9rem;
+        top: 10px;
+        right: 10px;
+
+        position: absolute;
+    }
+
     /*HEADER CONTAINER*/
     .header-container {
         display: grid;
@@ -532,7 +546,8 @@ h3 {
         grid-column: auto / span 2;
         grid-row: auto / span 2;
         place-items: center;
-        aspect-ratio: 1 / 1;       
+        aspect-ratio: 1 / 1; 
+        /* position: relative;     */
     }
 
     /*LITEN HEADER BOX WITH BROWN BACKGROUND - LEFT */
@@ -542,6 +557,7 @@ h3 {
         place-items: center;
         aspect-ratio: 1 / 1;
     }
+
 
     /*LITTLE HEADER BOX WITH GREEN BACKGROUND - RIGHT */
     .header-box-little {
@@ -782,6 +798,10 @@ h3 {
     place-items: center;
 }
 
+.ham-icon-sm {
+    display: none;
+}
+
 /*IMAGE ICON FOR SEMA HEADER BOX*/
 .header-box-big-s .img {
     max-width: 100%;
@@ -877,12 +897,12 @@ h3 {
     margin-left: 38%;
     margin-right: 38%;
     margin-top: 2rem;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: .5rem;
     border-style: none;
     font-weight: 600;
     font-size: 1.5rem;
-    
+
     grid-area: button;   
 }
 
@@ -963,6 +983,17 @@ h3 {
 }
 
 @media (max-width: 600px) {
+    /*SEMA HAMBURGER ICON*/
+    .ham-icon-sm {
+        display: block;
+        width: 2.5rem;
+        height: 1.9rem;
+        top: 10px;
+        right: 10px;
+
+        position: absolute;
+    }
+
     /*SEMA HEADER CONTAINER*/
     .sm-header-container {
         display: grid;
