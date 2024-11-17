@@ -524,6 +524,7 @@ h3 {
 /*-----MEDIA PAGE-----*/
 @media (max-width: 600px) {
 
+    /* HAMBURGER ICON FIRST PAGE */
     .ham-icon {
         display: block;
         width: 2.5rem;
